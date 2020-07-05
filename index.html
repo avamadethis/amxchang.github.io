@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html>
-  
-<!-- FIX FOOTER LATER!!!--->	
+<html>	
 	
   <head>
     <meta charset='utf-8'>
@@ -16,7 +14,31 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     
     <style>
-      h1{
+     
+     
+       html, body {
+  height: 99%;
+  margin: 0;
+}
+.content {
+  min-height: 99.4%;
+}
+
+.content-inside {
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+
+.h1 {
+  margin: 0px;
+}
+
+footer {
+  line-height: 50px;
+  padding: 0px;
+}
+       h1{
         color: #800000;
         font-weight: 600;
       }
@@ -36,6 +58,9 @@
         margin:0;
         border-top: 5px solid #993d00;
 	text-align: center;
+    
+   min-width:450px; 
+   _width: expression( document.body.clientWidth > 450 ? "450px" : "auto" );
       }
       
       p{
@@ -49,6 +74,7 @@
         padding: 6px;
         background-color: #ffa366;
 	margin-bottom: -8px;
+
       }
     
      .navigation{
@@ -62,22 +88,22 @@
      .footer{
         background-color: #ffa366;
 	border-top: 3px solid #ba4c02;
-        right: 0;
-        bottom: 0;
-        left: 0;
         text-align: center;
-	padding: 1px;
-        position: relative;
-	margin-top: 40px;
-        height: -40px;
-  	clear: both;
+          height: 76px;       
+  margin-top: -70px;
+  padding:0;
+  overflow:hidden;
+	
       }
-      
     </style>
 	
   </head>
   
   <body>
+   
+   <div class="content">
+  <div class="content-inside">
+   
     <div class = "header">
       <h1  style = "font-family: 'Barlow', sans-serif;"><a href="https://amxchang.github.io" style = " color:#800000">amxchang.github.io</a></h1> 
     </div>
@@ -89,12 +115,17 @@
     </div>
     <h2 style = "font-family: 'Barlow', sans-serif;" >HELLO AND WELCOME TO MY WEBSITE!</h2>
     <p style = "font-family: 'Barlow', sans-serif;" >I'm Ava. I'm a high school student who's currently learning HTML and CSS so that I can code webpages. I enjoy crocheting, drawing, and baking. I'm not 100% sure what I'll put on this website yet, but it'll probably be a scrapbook or blog of sorts of my hobbies.</p>
-		
-	<!--   
-    <div class = "footer">
-     <h3  style = "font-family: 'Barlow', sans-serif;">Ava Chang &ensp;&emsp; <a href="https://github.com/amxchang" style = " color:#800000"target="_blank">github.com/amxchang</a></h3>
-    </div>
- -->
+       
+   <!-- <p>&emsp;</p>-->
+  
+  </div>
+</div>
+
+<footer class="footer">
+
+	<h3  style = "font-family: 'Barlow', sans-serif;">Ava Chang &ensp;&emsp; <a href="https://github.com/amxchang" style = " color:#800000"target="_blank">github.com/amxchang</a></h3>
+</footer>
+   
   </body>
   
  
